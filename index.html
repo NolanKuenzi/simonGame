@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link  href="./src/main.css" type="text/css" rel="stylesheet" />
+  <title>Simon Game</title>
+</head>
+
+<div id="wrapper">
+  <div id="header">
+    <h2 id="simonHeader">Simon Game</h2>
+  </div>
+
+<body onload="load()">
+  <div id="bodyDiv">
+    <div id="loadDiv">
+      <p>Click the Start Button to begin!</p>
+    </div>
+    
+  <div name="cover" id="cover">
+  </div>
+
+  <div id="buttons0">
+    <div name="green" class="colors" id="green"></div>
+    <div name="red" class="colors" id="red"></div>
+    <div name="yellow" class="colors" id="yellow"></div>
+    <div name="blue" class="colors" id="blue"></div>     
+  </div>
+    
+  <div id="buttons1">
+  <h2 id="btns1Header">Simon</h2>
+    
+  <div id="btns1Section">
+    <div class="btns1" id="c"><input name="count" type="text" class="isb" id="count" /><p>Count</p></div>
+    <div class="btns1" id="s"><input name="startBtn" type="button" class="isb" id="startBtn" onclick="start()" /><p>Start</p></div>
+    <div class="btns1" id="st"><input name="strict" type="button" class="isb" id="strict" onclick="strictOn()"/><p>Strict</p></div>
+    <div class="btns1" id="so"><input name="stOn" type="text" class="isb" id="stOn" /></div>
+  </div>
+
+  <div id="onOffSwitch">    
+    <div class="o-F" id="o_FToggle">
+      <label class="switch">
+      <input name="checkBox" type="checkbox" id="cBox" />
+      <span class="slider" onclick="on_Off()"></span>
+    </label>
+  </div>
+  </div>
+    
+  <div id="onOffLabels">
+    <div id="off" class="o-F"><p>OFF</p></div>
+    <div id="on" class="o-F"><p>ON</p></div>
+  </div> 
+    
+  </div>
+  
+  <div id=safariErrors>
+  </div>
+
+  </div> <!-- body -->
+</div> <!-- wrapper -->
+
+  <div id="footer">
+    <h4>Copyright © 2018 Nolan Kuenzi. Made for the freeCodeCamp Development Challenge: Build a Simon Game.</h4>
+  </div> 
+    <script type="text/javascript" src="./public/index.js"></script> 
+</body>
+</html>

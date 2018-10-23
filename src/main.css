@@ -1,0 +1,282 @@
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+#header {
+  overflow: hidden;
+  text-decoration: underline;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+#loadDiv {
+  display: none;
+  z-index: 5;
+  background-color: black;
+  height: 2.6em;
+  width: 15.5em;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 19.9em;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#wrapper {
+  min-height: 100%;
+  margin-bottom: -5em;
+}
+
+#bodyDiv {
+  text-align: center;
+}
+
+button:focus {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+#buttons0 {
+  z-index: 1;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  background-color: black;
+  border-radius: 50%;
+  width: 40em;
+  height: 40em;
+  margin-bottom: -29em;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#cover {
+  display: none;
+  z-index: 3;
+  opacity: 0.5;
+  background-color: black;
+  border-radius: 50%;
+  width: 40em;
+  height: 40em;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.colors {
+  z-index: 0;
+  height: 18.5em;
+  width: 18.5em;
+  border: .5em solid black;
+  position: relative;
+  left: .1em;
+  cursor: pointer; 
+  border-color: black;
+}
+
+#green {
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  background-color: green;
+}
+
+#red {
+  border-radius: 0 100% 0 0;
+  background-color: #b20000;
+  position: absolute;
+  left: 20.4em;
+  bottom: 20.5em;
+}
+
+#yellow {
+  border-radius: 0 0 0 100%;
+  background-color: #e5c100;
+  position: absolute;
+  top: 20.3em;
+  right: 0.3em;
+}
+
+#blue {
+  border-radius: 0 0 100% 0;
+  background-color: blue;
+  left: 20.4em;
+  top: 20.3em;
+  position: absolute;
+}
+
+#buttons1 {
+  z-index: 4;
+  position: relative;
+  border-radius: 50%;
+  left: 50%;
+  width: 19em;
+  height: 18em;	
+  background-color: white;
+  border: .5em solid black;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#btns1Header {
+  position: relative;
+  top: 0.5em;	
+}
+
+#btns1Section {
+  position: relative;
+  top: 2em;
+}
+
+.btns1 {
+  display: inline-block;
+}
+
+.isb {
+  border-color: black;
+}
+
+#count {
+  position: relative;	
+  width: 3em;
+  height: 2.5em;
+  background-color: black;
+  color: red;
+  text-align: center;
+  pointer-events: none; 
+  font-size: .9em;
+}
+
+#startBtn {
+  position: relative;
+  width: 3em;
+  height: 3em;
+  margin-left: 1em;
+  margin-right: 1em;
+  border-radius: 50%;
+  background-color: #b20000;
+  cursor: pointer;
+}
+
+#startBtn:active {
+  border-color: black;
+  outline: none;
+  transform: translateY(.2em);
+}
+
+#strict {
+  position: relative;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-color: #e5c100;
+  cursor: pointer;
+}
+
+#strict:active {
+  border-color: black;
+  outline: none;
+  transform: translateY(.2em);
+}
+
+#stOn {
+  position: relative;
+  bottom: 6em;
+  float: right;
+  width: .9em;
+  height: .9em;
+  border-radius: 50%;
+  pointer-events: none;
+  background-color: black;
+}
+
+#onOffSwitch {
+  cursor: pointer;
+  position: relative;
+  top: 2.5em;
+  width: 4em;
+  height: 2em;
+  background-color: black !important;
+  z-index: 4;
+  margin: auto;
+}
+
+.o-F {
+  display: inline-block;
+}
+
+#on {
+  position: relative;
+  left: 1.91em;
+}
+
+#off {
+  position: relative;
+  right: 2.3em;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0.9em;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  top: .5em;
+  height: 1em;
+  width: 1em;
+  background-color: white;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(-1.85em);
+  -ms-transform: translateX(-1.85em);
+  transform: translateX(-1.85em); 
+}
+
+#safariErrors {
+  display: none;
+  z-index: 4;
+  position: relative;
+  bottom: 15em;
+  height: 2.6em;
+  width: 15.5em;
+  left: 50%;
+  background-color: black;
+  text-align: center;
+  color: white;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#footer {
+  margin-top: 2em;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}

@@ -275,8 +275,8 @@ input:checked + .slider:before {
 }
 
 #footer {
-  margin-top: 2em;
   position: relative;
   width: 100%;
   text-align: center;
+  margin-top: 13em;
 }

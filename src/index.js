@@ -4,6 +4,7 @@ let compArr = [];
 let usrArr = [];
 let soundsArr;
 
+
 function load() {
     const border = document.getElementById("buttons1");
     border.style.borderColor = "black;";
